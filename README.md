@@ -62,12 +62,6 @@ Please do not replace the adapter with an undocumented private action. Before a 
 
 The team confirmation that the AutoChatter concept is allowed subject to channel-selection restrictions does not itself identify this interface. Until the sender and response contract are confirmed, this package is safe/configurable but **not an automatic message sender**.
 
-## Website and GitHub Pages
-
-The static product and install guide lives in [`site/`](site/). The Pages workflow (`.github/workflows/pages.yml`) validates site assets on pull requests and deploys only from `main` after a push, or when manually dispatched on `main`. It stages the versioned plugin ZIP as `downloads/AutoChatter-latest.zip` and generates `release.json` from the plugin manifest so the site download/version stay in sync.
-
-The intended site URL is [https://kilkproduct.github.io/AutoChatter/](https://kilkproduct.github.io/AutoChatter/). The first live deployment will run after this change is merged to `main` (or a workflow is dispatched on `main`). A repository admin must set **Settings → Pages → Build and deployment → Source: GitHub Actions** once. To stage the site locally, run `npm run pages:prepare`, then serve `site/` with any static HTTP server.
-
 ## Tests and validation
 
 - `npm run typecheck`: TypeScript no-emit typecheck.

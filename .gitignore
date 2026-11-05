@@ -5,6 +5,3 @@ plugins/*/build/
 plugins/*/node_modules/
 *.tsbuildinfo
 .DS_Store
-site/release.json
-site/downloads/*.zip
-__pycache__/
