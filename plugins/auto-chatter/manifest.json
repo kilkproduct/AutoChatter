@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "id": "dev.kilkproduct.auto-chatter",
+  "name": "AutoChatter",
+  "description": "A configurable current-channel-only plain-text scheduler. Sending remains disabled until Valenced confirms a supported messaging API.",
+  "author": "Kilk Product",
+  "version": "0.1.0",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNTg2NWYyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhiNWNmNiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIzMCIgZmlsbD0idXJsKCNiZykiLz4KICA8cGF0aCBkPSJNMjMgMzljMC04LjggNy4yLTE2IDE2LTE2aDUwYzguOCAwIDE2IDcuMiAxNiAxNnYzNGMwIDguOC03LjIgMTYtMTYgMTZINTdsLTE4IDE1Vjg5Yy05IDAtMTYtNy4yLTE2LTE2VjM5WiIgZmlsbD0iI2ZmZiIvPgogIDxwYXRoIGQ9Im00MyA1MSA5LTEzIDkgMTNNNjggNTFsOS0xMyA5IDEzIiBmaWxsPSJub25lIiBzdHJva2U9IiM1ODY1ZjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgPHBhdGggZD0iTTQ0IDY5YzQgOCAxMSAxMiAyMCAxMnMxNi00IDIwLTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiM1ODY1ZjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iOTciIHI9IjE3IiBmaWxsPSIjZjVjNTQyIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxwYXRoIGQ9Ik05MyA5N2gxNE0xMDAgOTB2MTQiIHN0cm9rZT0iIzMwMmI0NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjQiLz4KPC9zdmc+Cg==",
+  "dependencies": {
+    "valenced.api": {
+      "version": ">=1 <2"
+    },
+    "discord": {
+      "version": "*"
+    }
+  },
+  "dist": {
+    "script": "index.js"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "autochatter-valenced-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "valenced-plugin build --plugins-dir plugins auto-chatter",
+    "build:dev": "valenced-plugin build --plugins-dir plugins auto-chatter --dev",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "package": "python3 scripts/package.py",
+    "verify": "npm run typecheck && npm test && npm run build && npm run package",
+    "lint": "biome check plugins/auto-chatter/js tests"
+  },
+  "dependencies": {
+    "@valenced/plugin-cli": "git+https://github.com/Valenced/valenced-plugin-cli.git#9ea9f9bfc91319e2b18c6b1c9ac0b993f8600c1d",
+    "@valenced/types": "git+https://github.com/Valenced/valenced-types.git#c67dd726d1ec28b38d8ac93862fdd3b6029b1d29"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.12",
+    "@types/node": "^26.4.1",
+    "@types/react": "^19.2.18",
+    "react-native": "0.86.0",
+    "tsx": "^4.20.6",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "@react-native/community-cli-plugin": "npm:dry-uninstall",
+    "@react-native/codegen": "npm:dry-uninstall",
+    "babel-jest": "npm:dry-uninstall",
+    "babel-plugin-syntax-hermes-parser": "npm:dry-uninstall",
+    "hermes-compiler": "npm:dry-uninstall",
+    "jsc-android": "npm:dry-uninstall",
+    "react-devtools-core": "npm:dry-uninstall",
+    "recyclerlistview": "npm:dry-uninstall",
+    "react-native-gesture-handler": "npm:dry-uninstall",
+    "react-native-screens": "npm:dry-uninstall"
+  },
+  "trustedDependencies": [
+    "@valenced/plugin-cli",
+    "@swc/core"
+  ]
+}
