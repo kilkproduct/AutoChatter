@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json.tmp
+build/
+plugins/*/build/
+plugins/*/node_modules/
+*.tsbuildinfo
+.DS_Store
