@@ -9,8 +9,9 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "package": "python3 scripts/package.py",
+    "pages:prepare": "python3 scripts/prepare_pages.py",
     "verify": "npm run typecheck && npm test && npm run build && npm run package",
-    "lint": "biome check plugins/auto-chatter/js tests"
+    "lint": "biome check plugins/auto-chatter/js tests site/release.js"
   },
   "dependencies": {
     "@valenced/plugin-cli": "git+https://github.com/Valenced/valenced-plugin-cli.git#9ea9f9bfc91319e2b18c6b1c9ac0b993f8600c1d",
